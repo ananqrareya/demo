@@ -14,8 +14,15 @@ public class BookService {
     private static List<Book> internalBook(){
         if(books==null) {
             books = new ArrayList<>();
-            books.add(new Book(1, "Book Title 1", "Author 1", 19.99));
-            books.add(new Book(2, "Book Title 2", "Author 2", 24.99));
+            books.add(new Book(1, "The Alchemist", "Paulo Coelho", 70.00));
+            books.add(new Book(2, "The Great Gatsby", "F. Scott Fitzgerald", 65.50));
+            books.add(new Book(3, "To Kill a Mockingbird", "Harper Lee", 80.20));
+            books.add(new Book(4, "1984", "George Orwell", 75.80));
+            books.add(new Book(5, "Harry Potter and the Philosopher's Stone", "J.K. Rowling", 85.00));
+            books.add(new Book(6, "Pride and Prejudice", "Jane Austen", 68.50));
+            books.add(new Book(7, "The Catcher in the Rye", "J.D. Salinger", 72.80));
+            books.add(new Book(8, "The Hobbit", "J.R.R. Tolkien", 90.00));
+
         }
         return books;
     }
