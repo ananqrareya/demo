@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Basket</title>
+    <link rel="stylesheet" href="./css/basket.css">
+</head>
+<body>
+<header>
+
+    <ul>
+        <li><a th:href="@{/book}">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+<h1>Shoping Cart</h1>
+<main>
+    <div class="basket-container">
+        <table class="basket-table">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+             <tr th:each="theItems :${basket}">
+                 <td th:text="${theItems.title}"></td>
+                 <td th:text="${theItems.author}"></td>
+                 <td th:text="${theItems.price + '₪'}"></td>
+                 <td>
+                     <a th:href="@{/basket/DeleteItems(itemId=${theItems.id})}" class="checkout-btn">
+                         Delete Item
+                     </a>
+                 </td>
+             </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4">
+                    <div class="footer-content">
+                        <div class="total-price">Total Price: <span id="total-price" th:text="${total}">0</span><span>₪</span></div>
+                        <a class="checkout" th:href="@{/checkout}">Checkout</a>
+                    </div>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

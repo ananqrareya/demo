@@ -1,0 +1,97 @@
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.42em;
+    color: #A7A1AE;
+    background-color: #1F2739;
+}
+
+header {
+    background-color: #1F2739;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: wheat;
+    text-decoration: none;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #4DC3FA;
+}
+
+a{
+    color: #A7A1AE;
+    font-weight: bold;
+
+}
+main {
+    padding: 20px;
+}
+
+.basket-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.basket-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.basket-table th,
+.basket-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.basket-table th:first-child,
+.basket-table td:first-child {
+    width: 30%;
+}
+
+.basket-table th:last-child,
+.basket-table td:last-child {
+    width: 10%;
+    text-align: center;
+}
+
+.total-price {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.checkout {
+    background-color: #4DC3FA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
