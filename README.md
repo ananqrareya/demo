@@ -50,7 +50,7 @@ To run this application locally, follow these steps:
     mvn spring-boot:run
     ```
 
-5. Open your web browser and go to [http://localhost:8080](http://localhost:9095) to view the application.
+5. Open your web browser and go to (http://localhost:9095) to view the application.
 
 ## Phase 2 - Enhancement
 
@@ -60,9 +60,9 @@ In Phase 2 of development, the following enhancements will be implemented:
 - Implementation of search functionality to allow users to search for books by title, author, or category.
 - Security features including user registration and login functionality.
 
-## Phase 3 - Admin Dashboard
+## Phase 2 - Admin Dashboard
 
-In Phase 3, an admin dashboard will be developed to manage books and users efficiently:
+In Phase 2, an admin dashboard will be developed to manage books and users efficiently:
 
 - Book Management: Admins can add, edit, or delete books from the database.
 - User Management: Admins can view and manage user accounts, including roles and permissions.
