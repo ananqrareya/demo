@@ -22,6 +22,7 @@ public class BookService {
             books.add(new Book(6, "Pride and Prejudice", "Jane Austen", 68.50));
             books.add(new Book(7, "The Catcher in the Rye", "J.D. Salinger", 72.80));
             books.add(new Book(8, "The Hobbit", "J.R.R. Tolkien", 90.00));
+            books.add(new Book(9, "The Lord of the Rings", "J.R.R. Tolkien", 95.50));
 
         }
         return books;
